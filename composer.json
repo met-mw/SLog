@@ -1,0 +1,28 @@
+{
+    "name": "met_mw/slog",
+    "type": "library",
+    "authors": [
+        {
+            "name": "met-mw",
+            "email": "met-mw@rambler.ru"
+        }
+    ],
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/met-mw/SFileSystem.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "psr/log": "^1.0",
+        "met_mw/sfilesystem": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "SFileSystem\\": "src/SLog"
+        }
+    }
+}
